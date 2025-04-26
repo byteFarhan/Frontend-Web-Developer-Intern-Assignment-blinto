@@ -205,10 +205,26 @@ nav .links-container .m-btn {
   flex-shrink: 0;
 }
 
-/* RESPONSIVE STYLES FOR NAVBAR*/
+/* ========== Social Proof Styles ========== */
 
-/* RESPONSIVE STYLES FOR NAVBAR*/
+.social-proof {
+  background: var(--Gray-5);
+  padding: 64px 0;
+}
+.social-proof .img-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+.social-proof .img-container img {
+  width: 144px;
+  height: 96px;
+}
+
+/* RESPONSIVE STYLES */
 @media (max-width: 768px) {
+  /* RESPONSIVE STYLES FOR NAVBAR*/
   nav {
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -269,10 +285,8 @@ nav .links-container .m-btn {
     height: 100%;
     z-index: 8;
   }
-}
 
-/* RESPONSIVE STYLES FOR HERO*/
-@media (max-width: 768px) {
+  /* RESPONSIVE STYLES FOR HERO*/
   .hero {
     padding: 64px 16px;
   }
@@ -305,6 +319,21 @@ nav .links-container .m-btn {
     right: 63px;
     width: 100px;
     height: 200px;
+  }
+
+  /* ========== RESPONSIVE STYLES FOR Social Proof ========== */
+
+  .social-proof {
+    padding: 64px 16px;
+  }
+  .social-proof .img-container {
+    justify-content: center;
+    gap: 32px;
+  }
+  .social-proof .img-container img {
+    width: 96px;
+    height: 64px;
+    flex-shrink: 0;
   }
 }
 
