@@ -493,3 +493,67 @@ nav .links-container .m-btn {
 .contact-info-items .contact-info p {
   font-size: 16px;
 }
+
+/* ==========  CTA Section STYLES ========== */
+.cta-section {
+  background: var(--Brand-5, #eef2ff);
+  padding: 64px 0;
+  overflow: hidden;
+}
+.cta-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+}
+.cta-section .cta-contants {
+  width: 50%;
+}
+.cta-section .cta-contants h3 {
+  color: var(--Gray-80, #1e293b);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: -0.504px;
+}
+.cta-section .cta-contants p {
+  color: var(--Gray-60, #475569);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  margin: 24px 0 48px;
+}
+.cta-btn-container button {
+  margin-right: 16px;
+}
+.cta-section .cta-images {
+  width: 50%;
+}
+.cta-section .cta-images div {
+  position: relative;
+}
+.cta-section .cta-images img {
+  width: 318.551px;
+  height: 690.776px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  border: 1px solid var(--Gray-20);
+  box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.25),
+    0px 550px 154px 0px rgba(30, 41, 59, 0),
+    0px 352px 141px 0px rgba(30, 41, 59, 0.01),
+    0px 198px 119px 0px rgba(30, 41, 59, 0.05),
+    0px 88px 88px 0px rgba(30, 41, 59, 0.09),
+    0px 22px 48px 0px rgba(30, 41, 59, 0.1);
+}
+.cta-img-1 {
+  position: relative;
+  bottom: -185px;
+  left: 0;
+}
+.cta-img-2 {
+  position: absolute;
+  top: -150px;
+  right: -160px;
+}

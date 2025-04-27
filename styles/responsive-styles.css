@@ -226,6 +226,44 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
   }
+
+  /* ========== RESPONSIVE STYLES FOR CTA Section  ========== */
+  .cta-section {
+    padding: 64px 16px;
+  }
+  .cta-section .container {
+    flex-direction: column;
+  }
+  .cta-section .cta-contants {
+    width: 100%;
+  }
+  .cta-section .cta-contants h3 {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.39px;
+  }
+  .cta-section .cta-contants p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .cta-btn-container button {
+    margin-right: 0px;
+  }
+  .cta-section .cta-images {
+    width: 100%;
+  }
+
+  .cta-img-1 {
+    bottom: -20px;
+    left: 20px;
+  }
+  .cta-img-2 {
+    top: -50px;
+    right: 15px;
+  }
 }
 
 /* ========== RESPONSIVE STYLES FOR small devices ========== */
@@ -289,5 +327,26 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.144px;
+  }
+
+  .cta-btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+  }
+  .cta-section .cta-images img {
+    width: 145.596px;
+    height: 315.724px;
+    border-radius: 16px;
+  }
+  .cta-img-1 {
+    bottom: -20px;
+    left: 20px;
+  }
+  .cta-img-2 {
+    top: -50px;
+    right: 15px;
   }
 }
