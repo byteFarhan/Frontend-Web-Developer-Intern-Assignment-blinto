@@ -281,6 +281,84 @@ nav .links-container .m-btn {
 .feature-item p {
   text-align: center;
 }
+
+/* ========== Statistics Section STYLES ========== */
+.statistics {
+  background: var(--Gray-5);
+  padding: 96px 0;
+}
+.statistics-section-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 63%;
+  margin: 0 auto;
+}
+.statistics-section-intro h3 {
+  color: var(--Gray-80);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: -0.504px;
+  margin: 20px 0;
+}
+.statistics-section-intro p {
+  font-size: 20px;
+  text-align: center;
+}
+.statistics-section-intro span {
+  background: var(--Brand-5);
+  display: flex;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 123px;
+  margin: 0 auto;
+}
+.statistics-section-intro span img {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.statistics-container {
+  margin: 64px auto 0;
+  width: 63%;
+  display: flex;
+  justify-content: space-between;
+}
+.statistics-container div {
+  width: 100%;
+  text-align: center;
+  padding: 0 32px;
+}
+.statistics-container div:nth-child(1),
+.statistics-container div:nth-child(2) {
+  border-right: 2px solid var(--Gray-30);
+}
+.statistics-container div h2 {
+  color: var(--Brand-60);
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: -1.08px;
+  margin-bottom: 16px;
+}
+.statistics-container div p {
+  color: var(--Gray-60);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.144px;
+}
+
 /* ========== RESPONSIVE STYLES ========== */
 @media (max-width: 768px) {
   /* RESPONSIVE STYLES FOR NAVBAR*/
@@ -425,8 +503,44 @@ nav .links-container .m-btn {
     line-height: 24px;
     letter-spacing: -0.144px;
   }
+
+  /* ========== RESPONSIVE STYLES FOR Statistics Section ========== */
+  .statistics {
+    padding: 64px 16px;
+  }
+  .statistics-section-intro {
+    width: 100%;
+  }
+  .statistics-section-intro h3 {
+    margin: 16px 0;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.39px;
+  }
+  .statistics-section-intro p {
+    font-size: 18px;
+  }
+  .statistics-section-intro span {
+    width: 48px;
+    height: 48px;
+  }
+  .statistics-section-intro span img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .statistics-container {
+    width: 100%;
+  }
+
+  .statistics-container div p {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.144px;
+  }
 }
 
+/* ========== RESPONSIVE STYLES FOR small devices ========== */
 @media (max-width: 640px) {
   .mock-up .desktop-view {
     width: 343px;
@@ -446,5 +560,17 @@ nav .links-container .m-btn {
 
   .features-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .statistics-container {
+    flex-direction: column;
+  }
+  .statistics-container div {
+    padding: 32px 0;
+  }
+  .statistics-container div:nth-child(1),
+  .statistics-container div:nth-child(2) {
+    border-bottom: 2px solid var(--Gray-30);
+    border-right: none;
   }
 }
