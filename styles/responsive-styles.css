@@ -1,6 +1,15 @@
 /* ========== RESPONSIVE STYLES ========== */
 @media (max-width: 768px) {
   /* RESPONSIVE STYLES FOR NAVBAR*/
+  .section-title {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.39px;
+  }
+  .section-description {
+    font-size: 18px;
+  }
+  /* RESPONSIVE STYLES FOR NAVBAR*/
   nav {
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -177,6 +186,36 @@
     line-height: 24px;
     letter-spacing: -0.144px;
   }
+
+  /* ========== RESPONSIVE STYLES FOR Who is it for Section ========== */
+  .who-is-it-for {
+    padding: 96px 16px;
+  }
+  .who-is-it-for-section-intro {
+    width: 100%;
+  }
+
+  .who-is-it-for-section-contants {
+    margin: 40px 0 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    /* grid-auto-rows: auto; */
+  }
+  .who-is-it-for-section-contants .text-contants {
+    width: 100%;
+  }
+  .who-is-it-for-section-contants .text-contants div {
+    padding: 24px 0 24px 24px;
+  }
+
+  .who-is-it-for-section-contants .images-container {
+    border-radius: 24px;
+  }
+  .who-is-it-for-section-contants .images-container div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
 }
 
 /* ========== RESPONSIVE STYLES FOR small devices ========== */
@@ -211,5 +250,20 @@
   .statistics-container div:nth-child(2) {
     border-bottom: 2px solid var(--Gray-30);
     border-right: none;
+  }
+
+  .who-is-it-for-section-contants .images-container img {
+    width: 250px;
+    height: 354px;
+  }
+  .who-is-it-for-section-contants .images-container .img-1 {
+    bottom: -50px;
+    left: -20px;
+    transform: rotate(-23deg);
+  }
+  .who-is-it-for-section-contants .images-container .img-2 {
+    top: 20px;
+    right: -30px;
+    transform: rotate(-23deg);
   }
 }
