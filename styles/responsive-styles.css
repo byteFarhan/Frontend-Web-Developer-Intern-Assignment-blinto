@@ -216,6 +216,16 @@
     height: 100%;
     position: relative;
   }
+
+  /* ========== RESPONSIVE STYLES FOR Contact Section ========== */
+  .contact {
+    padding: 64px 16px;
+  }
+  .contact-info-items {
+    margin: 50px 0 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
 }
 
 /* ========== RESPONSIVE STYLES FOR small devices ========== */
@@ -265,5 +275,19 @@
     top: 20px;
     right: -30px;
     transform: rotate(-23deg);
+  }
+
+  .contact-info-items {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .contact-info-items .contact-info {
+    padding: 20px;
+  }
+
+  .contact-info-items .contact-info h5 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.144px;
   }
 }

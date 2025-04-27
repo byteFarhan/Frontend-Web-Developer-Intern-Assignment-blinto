@@ -455,3 +455,41 @@ nav .links-container .m-btn {
   right: -15px;
   transform: rotate(-35deg);
 }
+
+/* ========== Contact Section STYLES ========== */
+.contact {
+  margin: 0 auto;
+  padding: 64px 0;
+}
+.contact-section-intro {
+}
+.contact-section-intro .section-title {
+  margin: 24px 0;
+}
+.contact-info-items {
+  margin: 64px 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.contact-info-items .contact-info {
+  padding: 24px;
+  border: 1px solid var(--Gray-20, #e2e8f0);
+  border-radius: 24px;
+}
+.contact-info-items .contact-info img {
+  width: 24px;
+  height: 24px;
+}
+.contact-info-items .contact-info h5 {
+  color: var(--Gray-80, #1e293b);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin: 24px 0 8px;
+}
+.contact-info-items .contact-info p {
+  font-size: 16px;
+}
