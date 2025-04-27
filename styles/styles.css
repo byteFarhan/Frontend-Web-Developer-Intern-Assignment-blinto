@@ -456,6 +456,81 @@ nav .links-container .m-btn {
   transform: rotate(-35deg);
 }
 
+/* ========== Testimonials Section STYLES ========== */
+.testimonials {
+  background: #f8fafc;
+  padding: 96px 0;
+}
+.testimonials .container {
+}
+.testimonials-section-intro {
+}
+.testimonials-section-intro h3 {
+  margin: 24px 0;
+}
+
+.testimonials-grid {
+  margin-top: 64px;
+  column-count: 3;
+  gap: 32px;
+}
+
+.testimonial-card {
+  border-radius: 24px;
+  border: 1px solid var(--Gray-20, #e2e8f0);
+  background: var(--Gray-5, #f8fafc);
+  margin: 32px 0;
+  padding: 24px;
+  transition: transform 0.3s ease-in-out;
+  break-inside: avoid;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+.testimonial-card > p {
+  margin: 24px 0;
+}
+
+.testimonial-card .stars {
+  display: flex;
+  gap: 8px;
+}
+.testimonial-card .stars img {
+  width: 24px;
+  height: 24px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.user .info h5 {
+  color: var(--Gray-80, #1e293b);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.112px;
+}
+
+.user .info p {
+  color: var(--Gray-60, #475569);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
 /* ========== Contact Section STYLES ========== */
 .contact {
   margin: 0 auto;

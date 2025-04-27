@@ -217,6 +217,14 @@
     position: relative;
   }
 
+  /* ========== RESPONSIVE STYLES FOR testimonials Section ========== */
+  .testimonials-grid {
+    column-count: 2;
+  }
+  .testimonials {
+    background: #f8fafc;
+    padding: 64px 16px;
+  }
   /* ========== RESPONSIVE STYLES FOR Contact Section ========== */
   .contact {
     padding: 64px 16px;
@@ -313,6 +321,10 @@
     top: 20px;
     right: -30px;
     transform: rotate(-23deg);
+  }
+
+  .testimonials-grid {
+    column-count: 1;
   }
 
   .contact-info-items {
