@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -222,7 +223,65 @@ nav .links-container .m-btn {
   height: 96px;
 }
 
-/* RESPONSIVE STYLES */
+/* ========== Features Section Styles ========== */
+.features {
+  padding: 96px 0;
+}
+
+.features-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.features-intro h3 {
+  color: var(--Gray-80);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: -0.504px;
+}
+
+.features-intro p {
+  text-align: center;
+  width: 63%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.features-container {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 32px;
+}
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.feature-item img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+.feature-item h5 {
+  color: var(--Gray-80);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin-bottom: 8px;
+}
+.feature-item p {
+  text-align: center;
+}
+/* ========== RESPONSIVE STYLES ========== */
 @media (max-width: 768px) {
   /* RESPONSIVE STYLES FOR NAVBAR*/
   nav {
@@ -335,6 +394,37 @@ nav .links-container .m-btn {
     height: 64px;
     flex-shrink: 0;
   }
+
+  /* ========== RESPONSIVE STYLES FOR Features Section ========== */
+
+  .features {
+    padding: 64px 16px;
+  }
+
+  .features-intro h3 {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.39px;
+  }
+
+  .features-intro p {
+    font-size: 16px;
+  }
+
+  .features-container {
+    margin-top: 48px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .feature-item img {
+    width: 64px;
+    height: 64px;
+  }
+  .feature-item h5 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.144px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -348,5 +438,13 @@ nav .links-container .m-btn {
     right: 63px;
     width: 78.202px;
     height: 169.58px;
+  }
+
+  .features-intro p {
+    width: 100%;
+  }
+
+  .features-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
