@@ -272,6 +272,17 @@
     top: -50px;
     right: 15px;
   }
+
+  /* ========== RESPONSIVE STYLES FOR Footer Section  ========== */
+  .footer {
+    padding: 64px 16px;
+  }
+  .footer-top {
+    justify-content: flex-start;
+  }
+  .footer-column {
+    flex: 1 1 40%;
+  }
 }
 
 /* ========== RESPONSIVE STYLES FOR small devices ========== */
@@ -360,5 +371,12 @@
   .cta-img-2 {
     top: -50px;
     right: 15px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-column {
+    width: 100%;
   }
 }
