@@ -218,6 +218,9 @@
   }
 
   /* ========== RESPONSIVE STYLES FOR testimonials Section ========== */
+  .testimonials-section-intro {
+    text-align: center;
+  }
   .testimonials-grid {
     column-count: 2;
   }
