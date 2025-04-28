@@ -532,6 +532,10 @@ nav .links-container .m-btn {
   line-height: 160%;
 }
 
+.load-more-btn {
+  display: none;
+}
+
 /* ========== Contact Section STYLES ========== */
 
 .contact {
