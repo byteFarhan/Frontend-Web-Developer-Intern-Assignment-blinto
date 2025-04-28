@@ -1,3 +1,14 @@
+const loadMoreBtn = document.getElementById("load-more-btn");
+loadMoreBtn.addEventListener("click", () => {
+  const hiddenCards = document.querySelectorAll(".testimonial-card.sm-hidden");
+
+  // remove sm-hidden class
+  hiddenCards.forEach((card) => card.classList.remove("sm-hidden"));
+
+  // Hide button
+  loadMoreBtn.style.display = "none";
+});
+
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {

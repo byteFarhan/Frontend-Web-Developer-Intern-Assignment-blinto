@@ -347,13 +347,11 @@
     margin-top: 0;
     column-count: 1;
   }
-  .testimonials-grid .testimonial-card:nth-child(5),
-  .testimonials-grid .testimonial-card:nth-child(6),
-  .testimonials-grid .testimonial-card:nth-child(7),
-  .testimonials-grid .testimonial-card:nth-child(8),
-  .testimonials-grid .testimonial-card:nth-child(9) {
+
+  .sm-hidden {
     display: none;
   }
+
   .load-more-btn {
     display: block;
     margin: 0 auto;
