@@ -571,6 +571,91 @@ nav .links-container .m-btn {
   font-size: 16px;
 }
 
+/* ==========  FAQ Section STYLES ========== */
+
+.faq-section {
+  background: #f8fafc;
+  padding: 96px 0;
+}
+
+.faq-section .faq-section-intro {
+  text-align: center;
+}
+.faq-section-intro .section-title {
+  margin: 24px 0;
+}
+.faq-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-accordion {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: transparent;
+  border-bottom: 1px solid var(--Gray-30, #cbd5e1);
+  overflow: hidden;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.faq-icon {
+}
+.faq-icon img {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.faq-question h5 {
+  flex: 1;
+  color: var(--Gray-70, #334155);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: -0.112px;
+}
+
+.faq-toggle img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: transparent;
+  padding: 0 16px;
+  color: var(--Gray-60, #475569);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 0 16px 16px;
+}
+
+.faq-item.active .faq-toggle img {
+  transform: rotate(180deg);
+}
+
 /* ==========  CTA Section STYLES ========== */
 .cta-section {
   background: var(--Brand-5, #eef2ff);
@@ -680,12 +765,6 @@ nav .links-container .m-btn {
   color: var(--Brand-60);
 }
 
-/* .footer-bottom {
-  text-align: center;
-  border-top: 1px solid var(--Gray-30);
-  padding-top: 32px;
-  position: relative;
-} */
 .footer-bottom {
   text-align: center;
   border-top: 1px solid var(--Gray-30);
@@ -702,17 +781,6 @@ nav .links-container .m-btn {
   gap: 8px;
   margin-bottom: 16px;
 }
-
-/* .footer-logo img {
-  width: 32px;
-  height: 32px;
-} */
-
-/* .footer-logo span {
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--Gray-80);
-} */
 
 .footer-backtop {
   position: absolute;

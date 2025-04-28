@@ -235,6 +235,11 @@
     gap: 32px;
   }
 
+  /* ========== RESPONSIVE STYLES FOR FAQ Section  ========== */
+  .faq-section {
+    padding: 64px 16px;
+  }
+
   /* ========== RESPONSIVE STYLES FOR CTA Section  ========== */
   .cta-section {
     padding: 64px 16px;
