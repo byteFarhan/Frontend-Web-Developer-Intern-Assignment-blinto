@@ -499,6 +499,7 @@ nav .links-container .m-btn {
 .testimonial-card .stars img {
   width: 24px;
   height: 24px;
+  mix-blend-mode: multiply;
 }
 
 .user {
@@ -679,11 +680,19 @@ nav .links-container .m-btn {
   color: var(--Brand-60);
 }
 
+/* .footer-bottom {
+  text-align: center;
+  border-top: 1px solid var(--Gray-30);
+  padding-top: 32px;
+  position: relative;
+} */
 .footer-bottom {
   text-align: center;
   border-top: 1px solid var(--Gray-30);
   padding-top: 32px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -694,16 +703,16 @@ nav .links-container .m-btn {
   margin-bottom: 16px;
 }
 
-.footer-logo img {
+/* .footer-logo img {
   width: 32px;
   height: 32px;
-}
+} */
 
-.footer-logo span {
+/* .footer-logo span {
   font-weight: 700;
   font-size: 20px;
   color: var(--Gray-80);
-}
+} */
 
 .footer-backtop {
   position: absolute;
